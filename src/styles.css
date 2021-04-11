@@ -1,0 +1,81 @@
+.container {
+    color: #282846;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .icon {
+    font-size: 28px;
+  }
+  #comming-weather {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  button {
+    color: #282846;
+    background-color: #d8ebe4;
+    border-radius: 10px;
+    border: solid;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    font-weight: bold;
+  }
+  button i {
+    font-size: 18px;
+  }
+  .big {
+    font-size: 48px;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  main {
+    padding: 20px;
+    font-size: 60px;
+  }
+  form {
+    display: float;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #przycisk {
+    background-color: #fed049;
+    color: #282846;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid;
+    font-size: 18px;
+  
+    text-align: center;
+    margin: 10px;
+  }
+  #city-name {
+    background-color: #fed14986;
+    color: #282846;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid;
+    font-size: 18px;
+  
+    margin: 10px;
+  }
+  #main-weekday,
+  #main-date,
+  #main-time {
+    font-size: 18px;
+    font-weight: 30px;
+  }
+  #main-city {
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 30px;
+  }
+  .picked {
+    background: #007580;
+  }
+  

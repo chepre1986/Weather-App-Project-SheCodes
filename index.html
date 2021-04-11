@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WeatherBox-Project</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1afa2ff306.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <span>
+            <strong class="big" id="main-temp-max">29°C</strong>
+          </span>
+        </div>
+        <div class="col-4">
+          <span><br /><i class="fas fa-temperature-high big"></i> </span>
+        </div>
+        <div class="col-4">
+          <div class="row"><span id="main-city">PARIS</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <span>precipitate <i class="fas fa-umbrella icon"></i> </span>
+          <br />
+          <span>wind <i class="fas fa-wind icon"></i></span>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4">
+          <div class="row"><span id="main-time">10:00</span></div>
+          <span id="main-weekday">SUNDAY </span><br />
+          <span id="main-date">May 2nd 2021</span>
+        </div>
+      </div>
+
+      <div class="row" id="comming-weather">
+        <div class="col-2">
+          <span>
+            <i class="fas fa-bolt icon" id="icon-1"></i>
+            <br />
+            <span id="max1">day/night</span> </span
+          ><br />
+          <span id="day-1">Monday</span>
+        </div>
+
+        <div class="col-2">
+          <span>
+            <i class="fas fa-cloud icon" id="icon-2"></i>
+            <br />
+            <span id="max2">day/night</span> </span
+          ><br />
+          <span id="day-2">Tuesday</span>
+        </div>
+
+        <div class="col-2">
+          <span>
+            <i class="fas fa-cloud-rain icon" id="icon-3"></i>
+            <br />
+            <span id="max3">day/night</span> </span
+          ><br />
+          <span id="day-3">Wednesday</span>
+        </div>
+
+        <div class="col-2">
+          <span>
+            <i class="fas fa-cloud-sun icon" id="icon-4"></i>
+            <br />
+            <span id="max4">day/night</span> </span
+          ><br />
+          <span id="day-4">Thursday</span>
+        </div>
+
+        <div class="col-2">
+          <span>
+            <i class="fas fa-snowflake icon" id="icon-5"></i>
+            <br />
+            <span id="max5">day/night</span> </span
+          ><br />
+          <span id="day-5">Friday</span>
+        </div>
+
+        <div class="col-2">
+          <span>
+            <i class="fas fa-sun icon" id="icon-6"></i>
+            <br />
+            <span id="max6">day/night</span> </span
+          ><br />
+          <span id="day-6">Saturday</span>
+        </div>
+      </div>
+
+      <form id="form-city">
+        <input
+          type="text"
+          placeholder="Enter city name..."
+          autofocus="on"
+          id="city-name"
+        />
+        <input type="submit" value="Search" id="przycisk" />
+      </form>
+      <div class="row">
+        <div class="col-3"><button id="celsjusz">°C</button></div>
+        <div class="col-3"><button id="farenheit">°F</button></div>
+        <div class="col-6">
+          <button id="current-location">
+            Current city <i class="fas fa-map-pin"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
